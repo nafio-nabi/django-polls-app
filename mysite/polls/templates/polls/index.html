@@ -1,3 +1,7 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+<img src="{% static 'polls/images/django.jpeg' %}" alt="Django t-shirt" width="100px">
 {% if latest_question_list %}
     <ul>
         {% for question in latest_question_list %}
